@@ -4,11 +4,11 @@ pipeline {
     tools {
         maven 'maven'
     }
-     
+
     stages {
-        stage('build') {
+        stage('env info') {
             steps {
-                sh 'mvn --version'
+                sh 'java --version'
             }
         }
     }
