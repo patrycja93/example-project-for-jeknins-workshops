@@ -8,15 +8,15 @@ pipeline {
     stages {
         stage('env info') {
             steps {
-                sh 'java --version'
+                bat 'java --version'
             }
         }
         stage('build') {
             steps {
-                sh 'mvn compile'
+                bat 'mvn compile'
             }
             steps {
-                sh 'mvn package'
+                bat 'mvn package'
             }
         }
     }
